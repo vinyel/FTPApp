@@ -1,5 +1,11 @@
 div.box1 {
-  width: 100%;
+  position: relative;
+  width: 50%;
   height: auto;
   border: solid 3px #000000;
+}
+div.box1:before {
+    content:"";
+    display: block;
+    padding-top: 100%; /* 高さを幅の75%に固定 */
 }
